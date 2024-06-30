@@ -22,14 +22,14 @@ const about = {
     },
     {
       fieldName: "Phone",
-      fieldValue: "(347) 849 4116"
+      fieldValue: "(+1) 347 849 4116"
     },
     {
       fieldName: "Experience",
       fieldValue: "3+ years"
     },
     {
-      fieldName: "Discord",
+      fieldName: "Discord & Github",
       fieldValue: "siezedeath"
     },
     {
