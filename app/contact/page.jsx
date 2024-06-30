@@ -55,22 +55,22 @@ const Contact = () => {
               <p className="text-white/60"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas obcaecati minus minima optio reprehenderit. Aspernatur labore, rerum consectetur expedita corrupti impedit nisi, aut vel vitae magni, aliquid pariatur voluptatum incidunt.</p>
               {/** input */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <Input type="firstname" placeholder="First Name" />
-                <Input type="lastname" placeholder="Last Name" />
-                <Input type="email" placeholder="Email Address" />
-                <Input type="phone" placeholder="Phone Number" />
+                <Input type="firstname" placeholder=" First Name" />
+                <Input type="lastname" placeholder=" Last Name" />
+                <Input type="email" placeholder=" Email Address" />
+                <Input type="phone" placeholder=" Phone Number" />
               </div>
               {/** select */}
               <Select>
                 <SelectTrigger className="w-full">
                   <SelectValue placeholder="Select a service"/>
                 </SelectTrigger>
-                <SelectContent className="bg-black text-white/10">
+                <SelectContent>
                   <SelectGroup>
                     <SelectLabel>Select a service</SelectLabel>
-                    <SelectItem value="est">Fullstack Software Development</SelectItem>
-                    <SelectItem value="cst">Quantitative Research</SelectItem>
-                    <SelectItem value="mst">Tutor</SelectItem>
+                    <SelectItem value="est"> Fullstack Software Development </SelectItem>
+                    <SelectItem value="cst"> Quantitative Research </SelectItem>
+                    <SelectItem value="mst"> Tutor </SelectItem>
                     </SelectGroup>
                 </SelectContent>
               </Select>
