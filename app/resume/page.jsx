@@ -1,15 +1,7 @@
 "use client";
 
-import {
-  FaHtml5,
-  FaCss3,
-  FaJs,
-  FaReact,
-  FaFigma,
-  FaNodeJs,
-} from "react-icons/fa";
-
-import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
+import { FaHtml5, FaCss3, FaJs, FaPython, FaJava } from "react-icons/fa";
+import { SiNextdotjs, SiTailwindcss, SiCplusplus } from "react-icons/si";
 
 // about data
 const about = {
@@ -56,7 +48,7 @@ const about = {
 const experience = {
   icon: "/assets/resume/badge.svg",
   title: "My experience",
-  decripton:
+  descripton:
   "Lorem ipsum dolor sit amet consectetur adipisicing elit. In alias velit commodi veritatis expedita nam. Suscipit sunt in corporis cum provident. Eaque sint error perspiciatis dolorem vero laboriosam facilis debitis.",
   items: [
     {
@@ -72,7 +64,7 @@ const experience = {
     {
       company: "Akuna Capital",
       position: "Quantitative Trading - Options",
-      duration: "Summer 2022"
+      duration: "Spring 2023"
     },
   ],
 };
@@ -81,8 +73,8 @@ const experience = {
 const education = {
   icon: "/assets/resume/cap.svg",
   title: "My education",
-  decripton:
-  "Lorem ipsum dolor sit amet consectetur adipisicing elit. In alias velit commodi veritatis expedita nam. Suscipit sunt in corporis cum provident. Eaque sint error perspiciatis dolorem vero laboriosam facilis debitis.",
+  descripton:
+  "I went to Stuyvesant High School and now I'm studying at Stony Brook University. I'm majoring in Applied Mathematics & Statistics. Stuyvesant was probably the biggest factor that motivated me to fall in love with math and I'm grateful for all the problem solving tools I've picked up along the way, and I've surprised myself at how applicable some of these skills are over a broad range of subjects.",
   items: [
     {
       institution: "Stony Brook University",
@@ -100,40 +92,39 @@ const education = {
 // skills data
 const skills = {
   title: "My skills",
-  description:
-  "Lorem ipsum dolor sit amet consectetur adipisicing elit. In alias velit commodi veritatis expedita nam. Suscipit sunt in corporis cum provident. Eaque sint error perspiciatis dolorem vero laboriosam facilis debitis.",
+  description: "These are some of the skills that I've picked up over my time coding. My main focus is on observing and analyzing data, as well as playing around with AI models as well finetuning them for my own use case.",
   skillList: [
     {
       icon: <FaHtml5 />,
-      name: "html 5",
+      name: "HTML5",
     },
     {
       icon: <FaCss3 />,
-      name: "cssl 3",
+      name: "CSS3",
     },
     {
       icon: <FaJs />,
-      name: "javascript",
-    },
-    {
-      icon: <FaReact />,
-      name: "react.js",
+      name: "JavaScript",
     },
     {
       icon: <SiNextdotjs />,
-      name: "next.js",
+      name: "Next.js",
     },
     {
       icon: <SiTailwindcss />,
-      name: "tailwind.css",
+      name: "Tailwind.css",
     },
     {
-      icon: <FaNodeJs />,
-      name: "node.js",
+      icon: <FaPython />,
+      name: "Python",
     },
     {
-      icon: <FaFigma />,
-      name: "figma",
+      icon: <FaJava />,
+      name: "Java",
+    },
+    {
+      icon: <SiCplusplus />,
+      name: "C++",
     },
   ]
 }
@@ -176,7 +167,7 @@ const Resume = () => {
             <TabsContent value="experience" className="w-full">
               <div className="flex flex-col gap-[30px] text-center xl:text-left">
                 <h3 className="text-4xl font-bold">{experience.title}</h3>
-                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">{experience.decripton}</p>
+                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">{experience.descripton}</p>
                 <ScrollArea className="h-[400px]">
                   <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
                     {experience.items.map((item, index) => {
@@ -199,7 +190,7 @@ const Resume = () => {
             <TabsContent value="education" className="w-full">
             <div className="flex flex-col gap-[30px] text-center xl:text-left">
                 <h3 className="text-4xl font-bold">{education.title}</h3>
-                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">{experience.decripton}</p>
+                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">{education.descripton}</p>
                 <ScrollArea className="h-[400px]">
                   <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
                     {education.items.map((item, index) => {
